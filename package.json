@@ -1,0 +1,9 @@
+{
+  "name": "full-stack-god",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python -m http.server 5900",
+    "test": "node tests/validate.mjs"
+  }
+}
