@@ -1,4 +1,4 @@
-/* Full Stack God. Warm dark paper, one ember accent, a serif for voice,
+/* Webcraft. Warm dark paper, one ember accent, a serif for voice,
  * a sans for reading, mono for code. Beats are the unit of everything. */
 
 :root {
@@ -1217,4 +1217,102 @@ dialog#search::backdrop {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ---- additions for the app shell */
+[hidden] {
+  display: none !important;
+}
+.pl-track {
+  fill: none;
+  stroke: var(--line-2);
+  stroke-width: 1.5;
+  stroke-dasharray: 2 6;
+  stroke-linecap: round;
+}
+.pl-trail {
+  fill: none;
+  stroke: var(--ember);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 0 10000;
+}
+.pipeline.still .pl-trail {
+  stroke-dasharray: none;
+  opacity: 0.35;
+}
+.pl-node {
+  cursor: pointer;
+  text-decoration: none;
+}
+.pl-hit {
+  fill: transparent;
+}
+.pl-dot {
+  fill: var(--bg);
+  stroke: var(--line-2);
+  stroke-width: 2;
+  transition: fill 0.3s, stroke 0.3s;
+}
+.pl-name {
+  font: 500 15px var(--sans);
+  fill: var(--text-3);
+  text-anchor: middle;
+  transition: fill 0.3s;
+}
+.pl-cap {
+  font: 400 11px var(--mono);
+  fill: var(--text-3);
+  opacity: 0.8;
+  text-anchor: middle;
+}
+.pl-node.lit .pl-dot {
+  fill: var(--ember);
+  stroke: var(--ember);
+}
+.pl-node.lit .pl-name {
+  fill: var(--text);
+}
+.pl-node:hover .pl-name,
+.pl-node:focus-visible .pl-name {
+  fill: var(--ember-2);
+}
+.pl-node:focus-visible {
+  outline: none;
+}
+.pl-node:focus-visible .pl-dot {
+  stroke: var(--text);
+}
+.pl-packet {
+  fill: var(--ember-2);
+}
+.pl-glow {
+  fill: var(--ember);
+  opacity: 0.25;
+}
+.pipeline.still .pl-packet,
+.pipeline.still .pl-glow {
+  display: none;
+}
+.gloss-filter {
+  width: 100%;
+  margin: 0 0 24px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line-2);
+  background: var(--bg-2);
+  color: var(--text);
+  font: 16px var(--sans);
+}
+dl.gloss a.from {
+  margin-left: 6px;
+  font: 500 12px var(--mono);
+  color: var(--text-3);
+  text-decoration: none;
+}
+dl.gloss a.from:hover {
+  color: var(--ember);
+}
+.simple > .note {
+  margin: 34px 0 6px;
 }

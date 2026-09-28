@@ -2,7 +2,7 @@
  * explanations written, playground drafts, and a spaced-review queue for
  * questions you got wrong (back after 1, 3, 7 and 21 days). */
 
-const KEY = "fsg:v1";
+const KEY = "webcraft:v1";
 const DAY = 86400000;
 const GAPS = [1, 3, 7, 21];
 
