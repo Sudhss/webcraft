@@ -5,7 +5,7 @@ uniform float uTime;
 
 export default {
   id: "shaders",
-  n: 31,
+  n: 35,
   part: "F",
   title: "Shaders",
   hook: "One tiny function, run two million times a frame. Learn to think in it and the GPU becomes a paintbrush.",

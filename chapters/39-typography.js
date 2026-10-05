@@ -1,6 +1,6 @@
 export default {
   id: "typography",
-  n: 35,
+  n: 39,
   part: "G",
   title: "Typography",
   hook: "Ninety percent of a UI is text. Set it well and a plain page looks expensive; set it badly and nothing saves it.",

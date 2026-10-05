@@ -1,6 +1,6 @@
 export default {
   id: "not-ai-made",
-  n: 39,
+  n: 43,
   part: "G",
   title: "Writing and design that don't look AI-made",
   hook: "Generated sites all look like the same average page. Learn the tells, then learn the one habit that removes them: decide.",

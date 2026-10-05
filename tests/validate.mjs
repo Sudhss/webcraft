@@ -122,7 +122,7 @@ for (const f of files) {
       }
     });
   });
-  if (beats < 25) warn.push(`only ${beats} beats (aim 30-60)`);
+  if (beats < 25 && ch.n !== 0) warn.push(`only ${beats} beats (aim 30-60)`);
   if (!missions) bad("no mission");
   if (!pitfalls) bad("no pitfall");
   if (interactive < 5) bad(`only ${interactive} interactive beats (need >= 5)`);

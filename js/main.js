@@ -339,7 +339,7 @@ function review() {
     due.length
       ? `${due.length} question${due.length > 1 ? "s" : ""} you missed, back on schedule. Get one right and it returns later (1, 3, 7, then 21 days); miss it and it starts over.`
       : queued
-        ? `Nothing due. ${queued} question${queued > 1 ? "s are" : " is"} waiting for their next date.`
+        ? `Nothing due. ${queued > 1 ? `${queued} questions are` : "1 question is"} waiting for ${queued > 1 ? "their" : "its"} next date.`
         : "Nothing to review yet. Questions you get wrong in a chapter come back here on a schedule."
   }</p>`;
   for (const r of due) {

@@ -14,6 +14,8 @@ function rules(lang) {
     case "js":
     case "jsx":
     case "ts":
+    case "tsx":
+    case "typescript":
     case "javascript":
     case "json":
       return [

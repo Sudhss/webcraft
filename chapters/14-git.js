@@ -1,6 +1,6 @@
 export default {
   id: "git",
-  n: 13,
+  n: 14,
   part: "C",
   title: "Git for real",
   hook: "Git is four object types and a folder of pointers. Learn that and no command can scare you again.",

@@ -57,8 +57,9 @@ addEventListener("unhandledrejection",function(e){var r=e.reason;send("error",["
 }
 
 function glslPage(src, id) {
-  const need = [];
-  if (!/precision\s+\w+\s+float/.test(src)) need.push("precision highp float;");
+  // The injected uniforms come before the user's code, so they need a float
+  // precision of their own; repeating the statement is legal in GLSL ES.
+  const need = ["precision highp float;"];
   if (!/uniform\s+float\s+uTime/.test(src)) need.push("uniform float uTime;");
   if (!/uniform\s+vec2\s+uRes/.test(src)) need.push("uniform vec2 uRes;");
   if (!/uniform\s+vec2\s+uMouse/.test(src)) need.push("uniform vec2 uMouse;");

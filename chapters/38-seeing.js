@@ -1,6 +1,6 @@
 export default {
   id: "seeing",
-  n: 34,
+  n: 38,
   part: "G",
   title: "Seeing like a designer",
   hook: "Design isn't taste. It's a ranking problem with five levers, and you can test every answer by squinting.",

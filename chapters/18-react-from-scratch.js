@@ -1,6 +1,6 @@
 export default {
   id: "react-from-scratch",
-  n: 16,
+  n: 18,
   part: "D",
   title: "React from scratch",
   hook: "Build a working React in a few hundred lines: elements, diffing, hooks, a scheduler, Fiber. After that, nothing in it is magic.",

@@ -1316,3 +1316,11 @@ dl.gloss a.from:hover {
 .simple > .note {
   margin: 34px 0 6px;
 }
+@media (max-width: 600px) {
+  .pl-name {
+    font-size: 21px;
+  }
+  .pl-cap {
+    display: none;
+  }
+}

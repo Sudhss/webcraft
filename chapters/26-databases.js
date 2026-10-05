@@ -1,6 +1,6 @@
 export default {
   id: "databases",
-  n: 23,
+  n: 26,
   part: "E",
   title: "Databases",
   hook: "Indexes are B+trees, isolation levels are bug classes, and your ORM is issuing 101 queries. Time to see it.",

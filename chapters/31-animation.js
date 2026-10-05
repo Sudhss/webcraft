@@ -1,6 +1,6 @@
 export default {
   id: "animation",
-  n: 27,
+  n: 31,
   part: "F",
   title: "Animation craft",
   hook: "Easing, springs and the one exponential that makes motion identical at 30, 60 and 144 fps.",

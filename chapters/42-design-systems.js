@@ -1,6 +1,6 @@
 export default {
   id: "design-systems",
-  n: 38,
+  n: 42,
   part: "G",
   title: "Design systems and tokens",
   hook: "Make every design decision once, name it well, and let a hundred pages inherit it without drifting.",
